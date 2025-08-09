@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1001787908400",
+    "firebase_url": "https://food-calorie-tracking-system-default-rtdb.firebaseio.com",
+    "project_id": "food-calorie-tracking-system",
+    "storage_bucket": "food-calorie-tracking-system.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001787908400:android:93a2fcef5c90f9a905e8f5",
+        "android_client_info": {
+          "package_name": "student.inti.foodtracking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0ZitGnJjr7i6COLPkbGwU5cYPlwo298c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
