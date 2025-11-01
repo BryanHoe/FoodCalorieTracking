@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_yellow"
+    android:padding="20dp"
+    tools:context=".UserManualActivity">
+
+    <!-- Back Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:paddingTop="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnBackBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/ic_media_previous"
+                    android:contentDescription="Back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Manual"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp" />
+
+    <!-- Content Container -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <!-- Small Content Container -->
+            <Button
+                android:id="@+id/btnHowToLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Log Food or Exercise"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="start|center_vertical"
+                android:backgroundTint="#F5F5F5"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btnPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Policy Statement"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="start|center_vertical"
+                android:backgroundTint="#F5F5F5"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btnAccountHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account and Password Help"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="start|center_vertical"
+                android:backgroundTint="#F5F5F5"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btnAppFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Features Overview"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="start|center_vertical"
+                android:backgroundTint="#F5F5F5"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

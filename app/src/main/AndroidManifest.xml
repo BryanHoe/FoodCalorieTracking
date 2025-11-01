@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" /> <!-- Storage (Android 13+) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> <!-- For older Android (below 13) keep this for backward compatibility -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +23,88 @@
         android:theme="@style/Theme.FoodTracking"
         tools:targetApi="31">
         <activity
+            android:name=".AppFeaturesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalorieDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountHelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HowToLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchManuallyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserManualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OTPActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.FoodTracking">
